@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Muhammad Bulah login-page</title>
+        <link rel="stylesheet" href="new.css">
+    </head>
+    <body>
+        <samp></samp>
+        <div class="login-page">
+            <div class="form">
+                <h1>MIUHAMMAD BULAH<br><span>LOGIN PAGE</span></h1>
+                <form class="register-form">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Password">
+                    <input type="email" placeholder="Email id">
+                    <input type="number" placeholder="Phone Number">
+                    <button>Create Account</button>
+                    <p class="message">Already Registered? <a href="#"><u>Login</u></a>
+                    </p>
+                </form>
+                <div class="m-form">
+                <form class="login form">
+                    <input type="email" placeholder="Email id">
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                    <p class="message">Not Registered? <a href="#"><u>Register</u></a>
+                </form>
+            </div>
+            </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+        <script>
+           $('.message a').click(function() {
+           $('form') .animate({height: "toggle", opacity: "toggle"}, "slow");
+           });
+        </script>
+    </body>
+</html>
